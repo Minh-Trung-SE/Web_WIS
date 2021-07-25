@@ -48,6 +48,10 @@ html{
     font-size: 36px;
 }
 
+.header-navbar{
+    margin-top: 32px;
+}
+
 .header-navbar__list{
     display: flex;
     flex-direction: row;
@@ -131,13 +135,12 @@ html{
 }
 
 .contact__item{
-    width: 240px;
     /* background-color: var(--primary-color); */
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 32px 0;
+    padding: 12px 24px;
 }
 
 .contact__item-wrapper{ 
@@ -146,10 +149,8 @@ html{
     justify-content: center;
 }
 
-
-
 .contact__item-icon{
-    font-size: 32px;
+    font-size: 40px;
     color: var(--text-color);
 }
 
@@ -163,6 +164,7 @@ html{
     text-align: center;
     text-justify: inter-word;
     color: var(--text-color);
+    text-decoration: none;
 }
 /*Footer*/
 
@@ -173,9 +175,6 @@ html{
     padding: 64px 0;
 }
 
-.footer{
-
-}
 .footer__list{
     margin-top: 32px;
     display: flex;
@@ -216,14 +215,14 @@ html{
     left: 2%;
     right: 2%;
     top: 10%;
-    bottom: 15%;
+    bottom: 5%;
     border-radius: 8px;
     content: "";
     background-color: white;
 }
 
 .footer__social-item-icon{
-    font-size: 24px;
+    font-size: 40px;
     color: #4C93B9;
     position: relative;
     z-index: 99;
