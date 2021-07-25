@@ -45,7 +45,7 @@ html{
 
 .header-logo__name{
     color: var(--white-color);
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .header-navbar__list{
@@ -59,7 +59,7 @@ html{
     text-transform: uppercase;
     color: var(--white-color);
     padding: 20px 12px 12px 12px;
-    font-weight: 550;
+    font-weight: 520;
 }
 
 .header-navbar__item:hover{
@@ -86,7 +86,8 @@ html{
 }
 
 .banner__heading{
-    margin-top: 32px;
+    margin-top: 90px;
+    font-size: 32px;
 }
 
 .banner__description{
