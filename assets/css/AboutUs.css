@@ -676,6 +676,12 @@ html{
         width: 100%;
         display: block;
     }
+
+    .footer-copyright{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /*Tablet*/
@@ -738,12 +744,6 @@ html{
     .gallery__item{
         width: 50%;
     }
-
-    /* .footer-copyright{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    } */
 
     .footer-wrapper{
         width: 100%;
