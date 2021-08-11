@@ -64,6 +64,8 @@
 .subnavbar-list-item{
     display: none;
     position: absolute;
+    max-height: 90vh;
+    overflow: auto;
     z-index: 999;
     background-color: #fff;
     padding: 13px 0;
@@ -71,6 +73,16 @@
     border-top: 2px solid #60f;
     box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
     min-width: 180px;
+    scrollbar-width: 4px;
+}
+
+.subnavbar-list-item::-webkit-scrollbar-thumb{
+    background: #FFBB00;
+    border-radius: 2px;
+}
+
+.subnavbar-list-item::-webkit-scrollbar{
+    display: none;
 }
 
 .subnavbar-item{
@@ -599,124 +611,3 @@
     padding: 15px 0;
 }
 
-@media (max-width: 47.9999rem){
-    .header{
-        display: none;
-    }
-
-    .content-wrapper--column-10{
-        width: 100%;
-    }
-
-    .eventchamp-service__item{
-        width: 100%;
-    }
-
-    .eventchamp-service__item{
-        width: 100%;
-    }
-
-    .gallery__item{
-        width: 100%;
-    }
-
-    .footer__item{
-        width: 100%;
-        display: block;
-    }
-
-    .footer-copyright{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/*Tablet*/
-@media (min-width: 48rem) and (max-width: 61.875rem){
-    .header{
-        display: none;
-    }
- 
-    .banner-wrapper{
-        width: 100%;
-    }
-
-    .banner-content-wrapper{
-        width: 100%;
-    }
-
-    .container{
-        width: 100%vh;
-        overflow: hidden;
-    }
-
-    .content__heading{
-        padding: 0 15px;
-    }
-
-    .content__description{
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    .footer-wrapper{
-        width: 100vh;
-        padding: 0 15px;
-        margin: 0;
-        
-    }
-    
-    .footer__info-wrapper{
-        flex-wrap: wrap;
-        flex-direction: column;
-
-    }
-     
-    .footer__item{
-        width: 100%;
-    }
-
-    .content-wrapper--column-10{
-        width: 100%;
-    }
-
-    .eventchamp-service__item{
-        width: 100%;
-    }
-
-    .eventchamp-service__item{
-        width: 50%;
-    }
-
-    .gallery__item{
-        width: 50%;
-    }
-
-    .footer-wrapper{
-        width: 100%;
-        margin: 0;
-    }
-
-    .footer__item{
-        width: 100%;
-        display: block;
-    }
-}
-
-/*PC big*/
-@media (min-width: 81.25rem){
-    .header{
-        display: block;
-    }
-    .grid{
-        width: 1300px;
-        margin: auto;
-    }
-
-    .footer-wrapper{
-        width: 1300px;
-        padding: 0 15px;
-        margin: auto;
-    }
-}
