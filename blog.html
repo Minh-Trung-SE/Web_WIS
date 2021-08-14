@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="./assets/css/AboutUs.css">
+    <link rel="icon" href="./assets/img/favicon.png" sizes="32x32">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -14,21 +15,20 @@
 
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header ">
+        <div id="mobile-bg" class="mobile-bg">
+        </div>
         <div class="grid header-wrapper">
-            <div class="header_logo">
-                <a href="#">
-                    <img class="header__logo-img" src="./assets/img/logo.png" alt="Logo">
-                </a>
-            </div>
-            
-            <nav id="header-navbar" class="header-navbar">
-                <div class="header_logo navbar-small">
+            <a href="#">
+                <img class="header__logo-img" src="./assets/img/logo.png" alt="Logo">
+            </a>
+            <nav class="header-navbar">
+                <div class="heading-navbar-mobile">
                     <a href="#">
                         <img class="header__logo-img" src="./assets/img/logo.png" alt="Logo">
                     </a>
-                    <div id class="close-navbar">
-                        <svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 371.23 371.23" xml:space="preserve"> <polygon points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "></polygon> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                    <div onclick="closeMobileMenu()" class="close-icon">
+                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 371.23 371.23" xml:space="preserve"> <polygon points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "></polygon> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
                     </div>
                 </div>
                 <ul class="navbar-list-item">
@@ -49,6 +49,7 @@
                             </li>
                         </ul>
                     </li>
+                    
                     <li class="navbar-item">
                         <div class="navbar-item__heading">
                             <a href="#" class="navbar-item__link">Events</a>
@@ -172,69 +173,59 @@
 
             </nav>
 
-            <div id="control-navbar" class="navbar__icon">
+            <div onclick="openMobileMenu()" class="navbar__icon">
                 <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 344.339 344.339" xml:space="preserve"> <g> <g> <g> <rect y="46.06" width="344.339" height="29.52"></rect> </g> <g> <rect y="156.506" width="344.339" height="29.52"></rect> </g> <g> <rect y="268.748" width="344.339" height="29.531"></rect> </g> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
             </div>
         </div>
     </header>
 
-    
+    <div class="modal-wrapper">
+        <div id="user-login" class="modal">
+            <div class="modal__header">
+                <h2 class="modal__heading">Sing In</h2>
+                <div onclick="closeUserForm()" class="close-icon">
+                    <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 371.23 371.23" xml:space="preserve"> <polygon points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "></polygon> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
 
-    <div id="modal">
-        <div class="modal-wrapper">
-            <div id="user__login" class="modal">
-                <div class="modal__header">
-                    <h2 class="modal__heading">Sing In</h2>
-                    <div onclick="closeModal()" class="modal__close-icon">
-                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 371.23 371.23" xml:space="preserve"> <polygon points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "></polygon> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
-    
-                    </div>
-                </div>
-                <div class="modal__body">
-                    <input class="modal__lable modal__input" type="text" placeholder="Username">
-                    <input class="modal__lable modal__input" type="email" placeholder="Email">
-                    <button class="modal__lable modal__btn">Be MEMBER</button>
-                </div>
-                <div class="modal__footer">
-                    <p class="modal__police">
-                        By creating an account you agree to our
-                        <a href="" class="modal__police-link">terms and conditions</a> and our  <a href="" class="modal__police-link">privacy policy.</a> 
-                    </p>
                 </div>
             </div>
-    
-            <div id="user__register" class="modal">
-                <div class="modal__header">
-                    <h2 class="modal__heading">Sing Up</h2>
-                    <div  onclick="closeModal()" class="modal__close-icon">
-                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 371.23 371.23" xml:space="preserve"> <polygon points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "></polygon> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
-    
-                    </div>
-                </div>
-                <div class="modal__body">
-                    <input class="modal__lable modal__input" type="text" placeholder="Username">
-                    <input class="modal__lable modal__input" type="email" placeholder="Email">
-                    <button class="modal__lable modal__btn">Be MEMBER</button>
-                </div>
-                <div class="modal__footer">
-                    <p class="modal__police">
-                        By creating an account you agree to our
-                        <a href="" class="modal__police-link">terms and conditions</a> and our  <a href="" class="modal__police-link">privacy policy.</a> 
-                    </p>
-                </div>
+            <div class="modal__body">
+                <input class="modal__lable modal__input" type="text" placeholder="Username">
+                <input class="modal__lable modal__input" type="email" placeholder="Email">
+                <button class="modal__lable modal__btn">Be MEMBER</button>
+            </div>
+            <div class="modal__footer">
+                <p class="modal__police">
+                    By creating an account you agree to our
+                    <a href="" class="modal__police-link">terms and conditions</a> and our  <a href="" class="modal__police-link">privacy policy.</a> 
+                </p>
             </div>
         </div>
 
+        <div id="user-register" class="modal">
+            <div class="modal__header">
+                <h2 class="modal__heading">Sing Up</h2>
+                <div  onclick="closeUserForm()" class="close-icon">
+                    <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 371.23 371.23" xml:space="preserve"> <polygon points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "></polygon> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                </div>
+            </div>
+            <div class="modal__body">
+                <input class="modal__lable modal__input" type="text" placeholder="Username">
+                <input class="modal__lable modal__input" type="email" placeholder="Email">
+                <button class="modal__lable modal__btn">Be MEMBER</button>
+            </div>
+            <div class="modal__footer">
+                <p class="modal__police">
+                    By creating an account you agree to our
+                    <a href="" class="modal__police-link">terms and conditions</a> and our  <a href="" class="modal__police-link">privacy policy.</a> 
+                </p>
+            </div>
+        </div>
     </div>
-    
     <script src="./assets/js/base.js"></script>
 
     <div class="banner-wrapper">
-        <div class="banner__bg">
-        </div>
-
-        <div class="banner-content-wrapper grid">
-            <h1 class="banner-content__heading">Blog</h1>
+        <div class="banner-content grid">
+            <h1 class="banner-content__heading">About Us</h1>
             <ul class="banner-content__breadcrumb">
                 <li>
                     <a href="#" class="banner-content__breadcrumb-link">Home</a>
@@ -244,9 +235,7 @@
                 </li>
             </ul>
         </div>
-
     </div>
-
 
     <div class="event">
         <div class="grid event-wrapper">
